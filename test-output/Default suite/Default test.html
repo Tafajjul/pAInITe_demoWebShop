@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 26 01:28:59 IST 2022</td>
+<td>Started on:</td><td>Wed Oct 26 17:11:42 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65420 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29564 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mohs10.scripts.HomeTest.RegisterPageTestCase()'><b>RegisterPageTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Continue&apos;]&quot;}
-  (Session info: chrome=97.0.4692.71)
+<td title='com.mohs10.scripts.HomeTest.LoginPageTestCase()'><b>LoginPageTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&quot;login&quot;]&quot;}
+  (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-ENC5FO9&apos;, ip: &apos;100.120.119.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-RSFGGM3&apos;, ip: &apos;192.168.1.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Deepika\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:28720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aa2060bb2acb7af43b9d657e2d97bf30
-*** Element info: {Using=xpath, value=//input[@value=&apos;Continue&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e8ca36679f76aff46db2272be865037d
+*** Element info: {Using=xpath, value=//a[@href=&quot;login&quot;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -100,9 +100,9 @@ Session ID: aa2060bb2acb7af43b9d657e2d97bf30
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.mohs10.actiondriver.Action.click(Action.java:58)
-	at com.mohs10.reuse.Home.Register(Home.java:34)
-	at com.mohs10.scripts.HomeTest.RegisterPageTestCase(HomeTest.java:40)
+	at com.mohs10.ActionDriver.Action.click(Action.java:57)
+	at com.mohs10.reuse.CommonFuns.logIn(CommonFuns.java:43)
+	at com.mohs10.scripts.HomeTest.LoginPageTestCase(HomeTest.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,16 +131,16 @@ Session ID: aa2060bb2acb7af43b9d657e2d97bf30
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace639769517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace639769517'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Continue&apos;]&quot;}
-  (Session info: chrome=97.0.4692.71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace836782867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836782867'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&quot;login&quot;]&quot;}
+  (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-ENC5FO9&apos;, ip: &apos;100.120.119.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-RSFGGM3&apos;, ip: &apos;192.168.1.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Deepika\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:28720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aa2060bb2acb7af43b9d657e2d97bf30
-*** Element info: {Using=xpath, value=//input[@value=&apos;Continue&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e8ca36679f76aff46db2272be865037d
+*** Element info: {Using=xpath, value=//a[@href=&quot;login&quot;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,9 +156,9 @@ Session ID: aa2060bb2acb7af43b9d657e2d97bf30
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.mohs10.actiondriver.Action.click(Action.java:58)
-	at com.mohs10.reuse.Home.Register(Home.java:34)
-	at com.mohs10.scripts.HomeTest.RegisterPageTestCase(HomeTest.java:40)
+	at com.mohs10.ActionDriver.Action.click(Action.java:57)
+	at com.mohs10.reuse.CommonFuns.logIn(CommonFuns.java:43)
+	at com.mohs10.scripts.HomeTest.LoginPageTestCase(HomeTest.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,7 +189,7 @@ Session ID: aa2060bb2acb7af43b9d657e2d97bf30
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>13</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
+<td>com.mohs10.scripts.HomeTest@7e7be63f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -199,30 +199,10 @@ Session ID: aa2060bb2acb7af43b9d657e2d97bf30
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mohs10.scripts.HomeTest.NewsbtnTestCase()'><b>NewsbtnTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
-<td></td>
-<td>9</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
-<tr>
-<td title='com.mohs10.scripts.HomeTest.BlogbtnTestCase()'><b>BlogbtnTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
-<td></td>
-<td>11</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
-<tr>
-<td title='com.mohs10.scripts.HomeTest.InvalidLogInTestCase()'><b>InvalidLogInTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
-<td></td>
-<td>7</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
-<tr>
 <td title='com.mohs10.scripts.HomeTest.CategoriesTest()'><b>CategoriesTest</b><br>Test class: com.mohs10.scripts.HomeTest</td>
 <td></td>
-<td>11</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
-<tr>
-<td title='com.mohs10.scripts.HomeTest.LoginPageTestCase()'><b>LoginPageTestCase</b><br>Test class: com.mohs10.scripts.HomeTest</td>
-<td></td>
-<td>8</td>
-<td>com.mohs10.scripts.HomeTest@4d0f2471</td></tr>
+<td>12</td>
+<td>com.mohs10.scripts.HomeTest@7e7be63f</td></tr>
 </table><p>
 </body>
 </html>

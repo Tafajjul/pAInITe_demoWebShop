@@ -4,7 +4,9 @@ import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -17,12 +19,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class StartBrowser {
+	public static WebDriverWait wait;
 	 public static WebDriver driver;
 	 //set up report
 	 public static ExtentReports extent;
 	 public static ExtentTest parentTest;
 	 public static ExtentTest childTest;
 	 ExtentSparkReporter sparkReporter;
+	
 	 
 	 @BeforeTest
 	 public void generateReport()
